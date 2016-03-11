@@ -47,3 +47,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Materialize Gem for CSS
 gem 'materialize-sass'
+
+# For users registration
+gem 'devise'
