@@ -56,3 +56,6 @@ gem 'toastr-rails'
 
 # For admin
 gem 'activeadmin', github: 'activeadmin'
+
+# For admin template
+gem 'active_skin'
