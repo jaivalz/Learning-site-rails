@@ -59,3 +59,5 @@ gem 'activeadmin', github: 'activeadmin'
 
 # For admin template
 gem 'active_skin'
+
+gem 'paperclip', '~> 4.3', '>= 4.3.5'
