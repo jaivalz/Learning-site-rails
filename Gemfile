@@ -50,3 +50,9 @@ gem 'materialize-sass'
 
 # For users registration
 gem 'devise'
+
+# For notifications
+gem 'toastr-rails'
+
+# For admin
+gem 'activeadmin', github: 'activeadmin'
