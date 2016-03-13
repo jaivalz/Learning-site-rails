@@ -65,3 +65,6 @@ gem 'paperclip', '~> 4.3', '>= 4.3.5'
 # For markdown
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 gem 'coderay', '~> 1.1', '>= 1.1.1'
+
+# For urls
+gem 'friendly_id', '~> 5.1'
