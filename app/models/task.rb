@@ -10,4 +10,11 @@ class Task < ActiveRecord::Base
   validates :project, presence: true
 
 
+  def next
+    project.tasks.where("tag > ? AND header = ?", tag, false).order(:tag).first
+  end
+
+  def prev
+    project.tasks.where("tag < ? AND header = ?", tag, false).order(:tag).last
+  end
 end
