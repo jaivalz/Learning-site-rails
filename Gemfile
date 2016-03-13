@@ -56,6 +56,7 @@ gem 'toastr-rails'
 
 # For admin
 gem 'activeadmin', github: 'activeadmin'
+gem 'active_admin-sortable_tree', '~> 0.2.1'
 
 # For admin template
 gem 'active_skin'
