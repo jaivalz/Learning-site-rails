@@ -61,3 +61,7 @@ gem 'activeadmin', github: 'activeadmin'
 gem 'active_skin'
 
 gem 'paperclip', '~> 4.3', '>= 4.3.5'
+
+# For markdown
+gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'coderay', '~> 1.1', '>= 1.1.1'
