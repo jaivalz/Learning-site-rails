@@ -17,4 +17,4 @@
 /tmp
 
 prueba 2/*
-app/view/task/*
+config/initializers/stripe.rb
