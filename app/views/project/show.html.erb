@@ -25,13 +25,13 @@
 			<% else %>
 
 				<div class="card-content center">
-					<!-- <%= image_tag avatar_url(current_user), class: "circle responsive-img avatar-medium" %><br/> -->
+					<%= image_tag avatar_url(current_user), class: "circle responsive-img avatar-medium" %><br/>
 					<h5><%= current_user.name %></h5>
 				</div>
 				<div class="card-action center">
 					<% @users.each do |u| %>
 						<span class="valign-wrapper">
-							<!-- <%= image_tag avatar_url(u), class: "circle responsive-img avatar-small" %>&nbsp; -->
+							<%= image_tag avatar_url(u), class: "circle responsive-img avatar-small" %>&nbsp;
 							<%= u.name %>
 						</span><br/>
 					<% end %>
@@ -49,6 +49,8 @@
 			</div>
 			<div class="card-content grey-text text-darken-4">
 				<h5><%= @project.name %></h5>
+				<span id="average_rating"></span>
+				<p> <%= @reviews.count %> <%= @reviews.count > 1? "Reviews" : "Review" %></p>
 				<hr>
 				<%= @project.content %>
 
@@ -67,7 +69,21 @@
 				</div>
 
 			</div>
+
+			<div class="card-content">
+				<h4>Reviews</h4>
+				<div><%= render 'reviews/form' if @joined && !@hasReview %></div>
+				<div><%= render 'reviews/index' %></div>
+			</div>
 		</div>
 	</div>
 
 </div>
+
+<script>
+	$('#average_rating').raty({
+		path: '/assets',
+		readOnly: true,
+		score: <%= @project.average_rating %>
+	});
+</script>
