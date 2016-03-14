@@ -69,3 +69,6 @@ gem 'coderay', '~> 1.1', '>= 1.1.1'
 
 # For urls
 gem 'friendly_id', '~> 5.1'
+
+#Stripe
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
